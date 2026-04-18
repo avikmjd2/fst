@@ -11,4 +11,8 @@ If you are on WSL, run these commands in the repective braches of _fst/fst_ and 
 > source venv/bin/activate
 > pip install pynini
 > python main.py
-These steps will run the code  
+
+If you have conda, then perform the following instructions
+> conda activate <env_name>
+> conda install -c conda-forge pynini
+> python main.py
