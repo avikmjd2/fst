@@ -103,7 +103,7 @@ def main():
 
     recognition_rate = recognized / total * 100 if total else 0.0
     exact_rate = exact_match / comparable * 100 if comparable else 0.0
-    print('Dataset:', args.dataset)
+    print('Dataset:  [morphochallenge2010]   http://morpho.aalto.fi/events/morphochallenge2010/datasets.shtml')
     print(f'Total lines evaluated: {total}')
     print(f'Recognized surface words: {recognized} / {total} ({recognition_rate:.2f}%)')
     if comparable:
