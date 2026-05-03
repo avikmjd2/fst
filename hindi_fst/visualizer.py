@@ -88,13 +88,11 @@ def format_analysis(word, lexicon_entry=None, heuristic=False, grapheme_path=Non
         lemma = lexicon_entry.get("lemma", word)
         upos  = lexicon_entry.get("upos",  "?")
         feats = lexicon_entry.get("feats", "_")
-        src   = "[heuristic]" if heuristic else "[lexicon / FST]"
     else:
-        lemma, upos, feats, src = word, "?", "_", "[unknown]"
+        lemma, upos, feats = word, "?", "_"
 
     lines.append(f"  Lemma    : {lemma}")
     lines.append(f"  POS      : {upos}")
     lines.append(f"  Features : {feats}")
-    lines.append(f"  Source   : {src}")
 
     return "\n".join(lines)
