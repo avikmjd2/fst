@@ -1,0 +1,237 @@
+# sent_id = train-s1
+# text = আমি গান গাইতে পারি ।
+# translit = āmi gāna gāite pāri .
+# text_en = I can sing.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+2	গান	গান	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=gāna|LTranslit=gāna
+3	গাইতে	গাওয়া	VERB	_	Aspect=Imp|VerbForm=Part	0	root	_	Translit=gāite|LTranslit=gāoŷā
+4	পারি	পারা	AUX	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	Translit=pāri|LTranslit=pārā
+5	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s2
+# text = তোমার বাবার নাম কি ?
+# translit = tomāra bābāra nāma ki ?
+# text_en = What is your father's name?
+1	তোমার	তুমি	PRON	_	Case=Gen|Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	LTranslit=tumi|Translit=tomāra
+2	বাবার	বাবা	NOUN	_	Case=Gen|Number=Sing	3	nmod:poss	_	Translit=bābāra|LTranslit=bābā
+3	নাম	নাম	NOUN	_	Case=Nom|Number=Sing	0	root	_	Translit=nāma|LTranslit=nāma
+4	কি	কি	DET	_	PronType=Int	3	det	_	Translit=ki|LTranslit=ki
+5	?	?	PUNCT	?	_	3	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s3
+# text = আমি কিছু করি না ।
+# translit = āmi kichu kari nā .
+# text_en = I don't do anything.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+2	কিছু	কিছু	PRON	_	PronType=Ind	3	obj	_	Translit=kichu|LTranslit=kichu
+3	করি	করা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=kari|LTranslit=karā
+4	না	না	PART	_	PartType=Neg	3	advmod	_	Translit=nā|LTranslit=nā
+5	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s4
+# text = তুমি কি জানো ?
+# translit = tumi ki jāno ?
+# text_en = Do you know?
+1	তুমি	তুমি	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	LTranslit=tumi|Translit=tumi
+2	কি	কি	DET	_	PronType=Int	3	det	_	Translit=ki|LTranslit=ki
+3	জানো	জানা	VERB	_	Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	Translit=jāno|LTranslit=jānā
+4	?	?	PUNCT	?	_	3	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s5
+# text = আমার মা ভাল ।
+# translit = āmāra mā bhāla .
+# text_en = My mother is good.
+1	আমার	আমি	PRON	_	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nmod:poss	_	LTranslit=āmi|Translit=āmāra
+2	মা	মা	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	Translit=mā|LTranslit=mā
+3	ভাল	ভাল	ADJ	_	Degree=Pos	0	root	_	Translit=bhāla|LTranslit=bhāla
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s6
+# text = তুমি গান গাইতে পারো ?
+# translit = tumi gāna gāite pāro ?
+# text_en = Can you sing songs?
+1	তুমি	তুমি	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	LTranslit=tumi|Translit=tumi
+2	গান	গান	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=gāna|LTranslit=gāna
+3	গাইতে	গাওয়া	VERB	_	Aspect=Imp|VerbForm=Part	0	root	_	Translit=gāite|LTranslit=gāoŷā
+4	পারো	পারা	AUX	_	Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin	3	aux	_	Translit=pāro|LTranslit=pārā
+5	?	?	PUNCT	?	_	3	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s7
+# text = আমি বই পড়ি ।
+# translit = āmi bai paṛi .
+# text_en = I read books.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+2	বই	বই	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=bai|LTranslit=bai
+3	পড়ি	পড়া	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=paṛi|LTranslit=paṛā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s8
+# text = তোমার নাম কি ?
+# translit = tomāra nāma ki ?
+# text_en = What is your name?
+1	তোমার	তুমি	PRON	_	Case=Gen|Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	LTranslit=tumi|Translit=tomāra
+2	নাম	নাম	NOUN	_	Case=Nom|Number=Sing	0	root	_	Translit=nāma|LTranslit=nāma
+3	কি	কি	DET	_	PronType=Int	2	det	_	Translit=ki|LTranslit=ki
+4	?	?	PUNCT	?	_	2	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s9
+# text = আমি কার্টুন দেখি ।
+# translit = āmi kārṭuna dekhi .
+# text_en = I watch cartoons.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+2	কার্টুন	কার্টুন	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=kārṭuna|LTranslit=kārṭuna
+3	দেখি	দেখা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=dekhi|LTranslit=dekhā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s10
+# text = আগে হাত ধুয়ে নাও ।
+# translit = āge hāta dhuŷe nāo .
+# text_en = Wash your hands first.
+1	আগে	আগে	ADV	_	_	3	advmod	_	Translit=āge|LTranslit=āge
+2	হাত	হাত	NOUN	_	Case=Nom|Number=Plur	3	obj	_	Translit=hāta|LTranslit=hāta
+3	ধুয়ে	ধোয়া	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	Translit=dhuŷe|LTranslit=dhoŷā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s11
+# text = তুমি কোন গান পড়ি ?
+# translit = tumi kona gāna paṛi ?
+# text_en = Which song do you study?
+1	তুমি	তুমি	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	LTranslit=tumi|Translit=tumi
+2	কোন	কোন	DET	_	PronType=Int	3	det	_	Translit=kona|LTranslit=kona
+3	গান	গান	NOUN	_	Case=Nom|Number=Sing	4	obj	_	Translit=gāna|LTranslit=gāna
+4	পড়ি	পড়া	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=paṛi|LTranslit=paṛā
+5	?	?	PUNCT	?	_	4	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s12
+# text = এখন খেতে যাই ।
+# translit = ekhana khete yāi .
+# text_en = Let's go eat now.
+1	এখন	এখন	ADV	_	_	3	advmod	_	Translit=ekhana|LTranslit=ekhana
+2	খেতে	খাওয়া	VERB	_	Aspect=Imp|VerbForm=Part	3	xcomp	_	Translit=khete|LTranslit=khāoŷā
+3	যাই	যাওয়া	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=yāi|LTranslit=yāoŷā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s13
+# text = তার বাবা ভালো ।
+# translit = tāra bābā bhālo .
+# text_en = His/her father is good.
+1	তার	সে	PRON	_	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	LTranslit=se|Translit=tāra
+2	বাবা	বাবা	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	Translit=bābā|LTranslit=bābā
+3	ভালো	ভালো	ADJ	_	Degree=Pos	0	root	_	Translit=bhālo|LTranslit=bhālo
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s14
+# text = আমি তোমার জন্য গল্প করি ।
+# translit = āmi tomāra janya galpa kari .
+# text_en = I tell stories for you.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	Translit=āmi|LTranslit=āmi
+2	তোমার	তুমি	PRON	_	Case=Gen|Number=Sing|Person=2|PronType=Prs	5	obl	_	LTranslit=tumi|Translit=tomāra
+3	জন্য	জন্য	ADP	_	_	2	case	_	Translit=janya|LTranslit=janya
+4	গল্প	গল্প	NOUN	_	Case=Nom|Number=Sing	5	obj	_	Translit=galpa|LTranslit=galpa
+5	করি	করা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=kari|LTranslit=karā
+6	।	।	PUNCT	।	_	5	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s15
+# text = আমার সোনার বাংলা ।
+# translit = āmāra sonāra bāṁlā .
+# text_en = My golden Bengal.
+1	আমার	আমি	PRON	_	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	LTranslit=āmi|Translit=āmāra
+2	সোনার	সোনা	ADJ	_	Degree=Pos	3	amod	_	Translit=sonāra|LTranslit=sonā
+3	বই	বই	NOUN	_	Case=Nom|Number=Sing	0	root	_	Translit=bai|LTranslit=bai
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s16
+# text = আমি গান দেখি না ।
+# translit = āmi gāna dekhi nā .
+# text_en = I don't watch songs.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+2	গান	গান	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=gāna|LTranslit=gāna
+3	দেখি	দেখা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=dekhi|LTranslit=dekhā
+4	না	না	PART	_	PartType=Neg	3	advmod	_	Translit=nā|LTranslit=nā
+5	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s17
+# text = তুমি কি পড়েছি ?
+# translit = tumi ki paṛechi ?
+# text_en = What did you read?
+1	তুমি	তুমি	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	LTranslit=tumi|Translit=tumi
+2	কি	কি	DET	_	PronType=Int	3	det	_	Translit=ki|LTranslit=ki
+3	পড়েছি	পড়া	VERB	_	Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=paṛechi|LTranslit=paṛā
+4	?	?	PUNCT	?	_	3	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s18
+# text = হ্যাঁ , আমি ভালবাসি ।
+# translit = hyām̃ , āmi bhālabāsi .
+# text_en = Yes, I love.
+1	হ্যাঁ	হ্যাঁ	INTJ	_	_	4	discourse	_	Translit=hyām̃|LTranslit=hyām̃
+2	,	,	PUNCT	,	_	4	punct	_	Translit=,|LTranslit=,
+3	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	Translit=āmi|LTranslit=āmi
+4	ভালবাসি	ভালবাসা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=bhālabāsi|LTranslit=bhālabāsā
+5	।	।	PUNCT	।	_	4	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s19
+# text = মা খাবার করে না ।
+# translit = mā khābāra kare nā .
+# text_en = Mother does not cook food.
+1	মা	মা	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	Translit=mā|LTranslit=mā
+2	খাবার	খাবার	NOUN	_	Case=Nom|Number=Sing	3	obj	_	Translit=khābāra|LTranslit=khābāra
+3	করে	করা	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	Translit=kare|LTranslit=karā
+4	না	না	PART	_	PartType=Neg	3	advmod	_	Translit=nā|LTranslit=nā
+5	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s20
+# text = আমি দেখেছি সুন্দর পতাকা ।
+# translit = āmi dekhechi sundara patākā .
+# text_en = I saw a beautiful flag.
+1	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	Translit=āmi|LTranslit=āmi
+2	দেখেছি	দেখা	VERB	_	Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=dekhechi|LTranslit=dekhā
+3	সুন্দর	সুন্দর	ADJ	_	Degree=Pos	4	amod	_	Translit=sundara|LTranslit=sundara
+4	পতাকা	পতাকা	NOUN	_	Case=Nom|Number=Sing	2	obj	_	Translit=patākā|LTranslit=patākā
+5	।	।	PUNCT	।	_	2	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s21
+# text = তাহলে আমি ধোবো ।
+# translit = tāhale āmi dhobo .
+# text_en = Then I will wash.
+1	তাহলে	তাহলে	ADV	_	_	3	advmod	_	Translit=tāhale|LTranslit=tāhale
+2	আমি	আমি	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=āmi|LTranslit=āmi
+3	ধোবো	ধোয়া	VERB	_	Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	Translit=dhobo|LTranslit=dhoŷā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s22
+# text = এখন শেষ হয়েছে ।
+# translit = ekhana śeṣa haŷeche .
+# text_en = It is finished now.
+1	এখন	এখন	ADV	_	_	3	advmod	_	Translit=ekhana|LTranslit=ekhana
+2	শেষ	শেষ	NOUN	_	Case=Nom|Number=Sing	3	compound:lvc	_	Translit=śeṣa|LTranslit=śeṣa
+3	হয়েছে	হওয়া	VERB	_	Aspect=Perf|Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Translit=haŷeche|LTranslit=haoŷā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s23
+# text = তুমি কি দেখি ?
+# translit = tumi ki dekhi ?
+# text_en = What do you see?
+1	তুমি	তুমি	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	LTranslit=tumi|Translit=tumi
+2	কি	কি	DET	_	PronType=Int	3	det	_	Translit=ki|LTranslit=ki
+3	দেখি	দেখা	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=dekhi|LTranslit=dekhā
+4	?	?	PUNCT	?	_	3	punct	_	Translit=?|LTranslit=?
+
+# sent_id = train-s24
+# text = আমাদের দেশের পতাকা সুন্দর ।
+# translit = āmādera deśera patākā sundara .
+# text_en = Our country's flag is beautiful.
+1	আমাদের	আমি	PRON	_	Case=Gen|Number=Plur|Person=1|PronType=Prs	2	nmod:poss	_	LTranslit=āmi|Translit=āmādera
+2	দেশের	দেশ	NOUN	_	Case=Gen|Number=Sing	3	nmod	_	Translit=deśera|LTranslit=deśa
+3	পতাকা	পতাকা	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	Translit=patākā|LTranslit=patākā
+4	সুন্দর	সুন্দর	ADJ	_	Degree=Pos	0	root	_	Translit=sundara|LTranslit=sundara
+5	।	।	PUNCT	।	_	4	punct	_	Translit=.|LTranslit=.
+
+# sent_id = train-s25
+# text = আমরা খেতে যাই ।
+# translit = āmarā khete yāi .
+# text_en = We go to eat.
+1	আমরা	আমি	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	Translit=āmarā|LTranslit=āmi
+2	খেতে	খাওয়া	VERB	_	Aspect=Imp|VerbForm=Part	3	xcomp	_	Translit=khete|LTranslit=khāoŷā
+3	যাই	যাওয়া	VERB	_	Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Translit=yāi|LTranslit=yāoŷā
+4	।	।	PUNCT	।	_	3	punct	_	Translit=.|LTranslit=.
+

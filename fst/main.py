@@ -13,8 +13,8 @@ import random
 
 from fst_builder import build_analyzer
 from analyzer import analyze
+from lexicon import STEMS
 from visualizer import format_analysis
-from lexicon import get_all_surface_words
 
 
 def _suggest(all_words):
@@ -31,7 +31,7 @@ def main():
     print("  Building FST transducers ...")
 
     analyzer_fst = build_analyzer()
-    all_words = get_all_surface_words()
+    all_words = list(STEMS.keys())
 
     print("  FST ready.\n")
 
