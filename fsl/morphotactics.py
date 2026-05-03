@@ -38,7 +38,7 @@ def build_noun_morphotactics():
 def build_verb_morphotactics():
     """
     Regular verb inflection:
-      stem+V;NFIN        -> stem         (base / infinitive)
+      stem+V;NFIN;IMP+SBJV -> stem       (base / infinitive / imperative)
       stem+V;PST         -> stem^ed      (simple past)
       stem+V;PRS;3;SG    -> stem^s       (3rd person singular present)
       stem+V;V.PTCP;PRS  -> stem^ing     (present participle / gerund)
@@ -55,7 +55,7 @@ def build_verb_morphotactics():
     verb_stems = _identity_map(regular_stems)
 
     suffixes = pynini.union(
-        pynini.cross("+V;NFIN", ""),
+        pynini.cross("+V;NFIN;IMP+SBJV", ""),
         pynini.cross("+V;PST", "^ed"),
         pynini.cross("+V;PRS;3;SG", "^s"),
         pynini.cross("+V;V.PTCP;PRS", "^ing"),
@@ -121,7 +121,7 @@ def build_derivational_morphotactics():
     # --- re- prefix (re + verb base form) ---
     re_verb_stems = _identity_map(RE_VERBS)
     re_prefix = pynini.cross("re+", "re")
-    re_suffix = pynini.cross("+V;NFIN", "")
+    re_suffix = pynini.cross("+V;NFIN;IMP+SBJV", "")
     re_fst = (re_prefix + re_verb_stems + re_suffix).optimize()
     parts.append(re_fst)
 

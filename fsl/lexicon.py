@@ -41,6 +41,12 @@ REGULAR_NOUNS = [
     "record", "report", "effort", "method", "period", "moment", "forest",
     "account", "amount", "argument", "government", "movement", "agreement",
     "experiment", "instrument", "element", "statement", "treatment",
+    # Added new vocabulary:
+    "computer", "network", "system", "program", "data", "software", "screen",
+    "keyboard", "mouse", "camera", "picture", "photo", "video", "music",
+    "animal", "building", "hospital", "hotel", "airport", "station",
+    "doctor", "nurse", "police", "lawyer", "judge", "driver", "pilot",
+    "bottle", "glass", "paper", "plastic", "metal", "wood", "stone",
 ]
 
 # Nouns ending in sibilant (take -es for plural via spelling rule)
@@ -142,6 +148,15 @@ REGULAR_VERBS = [
     "modify", "notify", "specify", "multiply", "simplify", "justify",
     "destroy", "employ", "enjoy", "annoy", "delay", "display",
     "obey", "pray", "spray", "stay", "sway",
+    # Added new vocabulary:
+    "accept", "add", "admit", "agree", "allow", "answer", "arrive",
+    "ask", "bake", "base", "bathe", "beg", "belong", "bless", "boil",
+    "borrow", "burn", "call", "care", "cause", "change", "charge",
+    "check", "clean", "climb", "close", "compare", "compete", "complain",
+    "complete", "contain", "cook", "copy", "correct", "cough", "count",
+    "crash", "cross", "cry", "dance", "dare", "decide", "deliver",
+    "depend", "describe", "destroy", "disagree", "discover", "discuss",
+    "divide", "dress", "drop", "earn", "employ", "empty", "encourage",
 ]
 
 # =============================================================================

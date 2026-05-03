@@ -45,23 +45,83 @@ def evaluate_system(analyzer_fn, test_data, system_name="System"):
     errors = []       # incorrect predictions
     oov_words = []    # words with no analysis
     
-    for i, (surface, expected) in enumerate(test_data):
+    for i, (surface, expected_raw) in enumerate(test_data):
         analyses = analyzer_fn(surface)
         num_analyses = len(analyses)
         total_analyses += num_analyses
         
+        # Handle custom CELEX format (comma-separated, e.g. "aim_V +3SG, aim_V +PL")
+        # and standardize it to match FST/Neural output ("aim+V;3SG")
+        expected_list = []
+        for e in expected_raw.split(","):
+            e = e.strip()
+            # If it's the custom format (e.g., "aim_V +3SG")
+            if "_V" in e or "_N" in e or "_A" in e:
+                # Convert "aim_V +3SG" to "aim+V;3SG"
+                e = e.replace(" ", ";").replace("_", "+").replace(";+", ";")
+            expected_list.append(e)
+            
+        # Refined structural matching:
+        #   1. Parse each analysis into (lemma, POS, inflectional_features)
+        #      e.g. "walk+V;PST"       → ("walk", "V", {"PST"})
+        #           "walk+V;V.PTCP;PST" → ("walk", "V", {"V.PTCP","PST"})
+        #   2. Match requires:
+        #      - Same lemma
+        #      - Same POS (first tag — V, N, ADJ, ADV, etc.)
+        #      - Inflectional features: exact match, OR both non-empty and
+        #        one subsumes the other (handles syncretism like PST ⊂ V.PTCP;PST)
+        #   3. Empty-feature predictions (e.g. just "walk+V") never subsume
+        #      a specific inflection — prevents lazy underspecification.
+
+        def parse_analysis(analysis):
+            """Split 'walk+V;V.PTCP;PST' → ('walk', 'V', {'V.PTCP','PST'})"""
+            parts = analysis.split("+", 1)
+            lemma = parts[0]
+            if len(parts) > 1:
+                tags = parts[1].split(";")
+                pos = tags[0]                     # first tag = POS
+                feats = set(tags[1:])             # rest = inflectional features
+            else:
+                pos, feats = "", set()
+            return lemma, pos, feats
+
+        def analyses_match(pred, expected):
+            """Refined match: same lemma, same POS, features subsume."""
+            p_lem, p_pos, p_feats = parse_analysis(pred)
+            e_lem, e_pos, e_feats = parse_analysis(expected)
+            # Lemma and POS must match exactly
+            if p_lem != e_lem or p_pos != e_pos:
+                return False
+            # Features: exact match always OK
+            if p_feats == e_feats:
+                return True
+            # Subsumption only if BOTH sides have at least one feature
+            # (prevents empty → anything from inflating scores)
+            if p_feats and e_feats:
+                return p_feats <= e_feats or e_feats <= p_feats
+            return False
+
+        is_correct = any(
+            analyses_match(p, e)
+            for p in analyses
+            for e in expected_list
+        )
+        
+        # Display the expected string properly
+        display_expected = expected_list[0] if len(expected_list) == 1 else " | ".join(expected_list)
+        
         result = {
             "word": surface,
-            "expected": expected,
+            "expected": display_expected,
             "predicted": analyses,
             "covered": num_analyses > 0,
-            "correct": expected in analyses,
+            "correct": is_correct,
         }
         results.append(result)
         
         if num_analyses > 0:
             covered += 1
-            if expected in analyses:
+            if is_correct:
                 correct += 1
             else:
                 errors.append(result)

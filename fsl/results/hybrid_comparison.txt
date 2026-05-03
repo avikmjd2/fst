@@ -8,68 +8,68 @@ METRICS
 
   Pure FST:
     Total:     5000
-    Coverage:  56/5000 (1.1%)
-    Accuracy:  33/5000 (0.7%)
-    Ambiguity: 1.21
-    OOV:       4944
+    Coverage:  1844/5000 (36.9%)
+    Accuracy:  1271/5000 (25.4%)
+    Ambiguity: 1.18
+    OOV:       3156
 
   Hybrid:
     Total:     5000
     Coverage:  5000/5000 (100.0%)
-    Accuracy:  3907/5000 (78.1%)
-    Ambiguity: 1.00
+    Accuracy:  3715/5000 (74.3%)
+    Ambiguity: 1.07
     OOV:       0
 
 IMPROVEMENT
 ----------------------------------------
-  Accuracy:  +77.5%
-  Coverage:  +98.9%
-  Additional correct: +3874
-  Neural wins:  3874
-  Neural losses: 1053
+  Accuracy:  +48.9%
+  Coverage:  +63.1%
+  Additional correct: +2444
+  Neural wins:  2374
+  Neural losses: 637
 
 NEURAL WINS (sample)
 ----------------------------------------
-  gastrohysterotomy    expected: gastrohysterotomy+N;SG         got: gastrohysterotomy+N;SG
-  bibliophagist        expected: bibliophagist+N;SG             got: bibliophagist+N;SG
-  opipramol            expected: opipramol+N;SG                 got: opipramol+N;SG
-  committies           expected: committy+N;PL                  got: committy+N;PL
-  remapper             expected: remapper+N;SG                  got: remapper+N;SG
-  dodecagons           expected: dodecagon+N;PL                 got: dodecagon+N;PL
-  foreshot             expected: foreshot+N;SG                  got: foreshot+N;SG
-  bardos               expected: bardo+N;PL                     got: bardo+N;PL
-  accuser              expected: accuser+N;SG                   got: accuser+N;SG
-  pleaseman            expected: pleaseman+N;SG                 got: pleaseman+N;SG
-  suppressants         expected: suppressant+N;PL               got: suppressant+N;PL
-  municycling          expected: municycling+N;SG               got: municycling+N;SG
-  antireflection       expected: antireflection+ADJ             got: antireflection+ADJ
-  subjoin              expected: subjoin+N;SG                   got: subjoin+N;SG
-  condiments           expected: condiment+N;PL                 got: condiment+N;PL
-  conjugational        expected: conjugational+ADJ              got: conjugational+ADJ
-  nondrowsy            expected: nondrowsy+ADJ                  got: nondrowsy+ADJ
-  anti-haitianism      expected: anti-haitianism+N;SG           got: anti-haitianism+N;SG
-  aplocheilids         expected: aplocheilid+N;PL               got: aplocheilid+N;PL
-  reversion            expected: reversion+N;SG                 got: reversion+N;SG
+  bandstand            expected: bandstand+N;SG                 got: bandstand+N;SG
+  laked                expected: lake+V;V.PTCP;PST              got: lake+V;PST
+  acquisititious       expected: acquisititious+ADJ             got: acquisititious+ADJ
+  respins              expected: respin+V;PRS;3;SG              got: respin+V;PRS;3;SG
+  portliest            expected: portly+ADJ;SPRL                got: portly+ADJ;SPRL
+  funnies              expected: funny+N;PL                     got: funny+N;PL
+  demonomists          expected: demonomist+N;PL                got: demonomist+N;PL
+  steatitic            expected: steatitic+ADJ                  got: steatitic+ADJ
+  nerdlings            expected: nerdling+N;PL                  got: nerdling+N;PL
+  warred               expected: war+V;V.PTCP;PST               got: war+V;PST
+  kinged               expected: king+V;V.PTCP;PST              got: king+V;PST
+  plating              expected: plate+V;V.PTCP;PRS             got: plate+V;V.PTCP;PRS
+  quasiperiodicity     expected: quasiperiodicity+N;SG          got: quasiperiodicity+N;SG
+  videoed              expected: video+V;PST                    got: video+V;PST
+  foreignises          expected: foreignise+V;PRS;3;SG          got: foreignise+V;PRS;3;SG
+  pyrogallic           expected: pyrogallic+ADJ                 got: pyrogallic+ADJ
+  flatting             expected: flat+V;V.PTCP;PRS              got: flat+V;V.PTCP;PRS
+  dysmorphobia         expected: dysmorphobia+N;SG              got: dysmorphobia+N;SG
+  nonsecretarial       expected: nonsecretarial+ADJ             got: nonsecretarial+ADJ
+  accensor             expected: accensor+N;SG                  got: accensor+N;SG
 
 NEURAL LOSSES (sample)
 ----------------------------------------
-  phrensies            expected: phrensy+V;PRS;3;SG             got: phrensy+N;PL
-  damask               expected: damask+ADJ                     got: damask+N;SG
-  mishits              expected: mishit+V;PRS;3;SG              got: mishit+N;PL
-  capotted             expected: capot+V;V.PTCP;PST             got: capot+V;PST
-  colimiting           expected: colimit+V;V.PTCP;PRS           got: colimite+V;V.PTCP;PRS
-  medjidieh            expected: medjidieh+N;SG                 got: medjidy+ADJ;CMPR
-  white-ant            expected: white-ant+V;NFIN;IMP+SBJV      got: white-ant+N;SG
-  papabile             expected: papabile+ADJ                   got: papabile+N;SG
-  cosegregated         expected: cosegregate+V;V.PTCP;PST       got: cosegregate+V;PST
-  underbanked          expected: underbanked+ADJ                got: underbank+V;PST
-  attorneys            expected: attorney+V;PRS;3;SG            got: attorney+N;PL
-  pawawed              expected: pawaw+V;V.PTCP;PST             got: pawaw+V;PST
-  annulled             expected: annul+V;PST                    got: annull+V;PST
-  prolonging           expected: prolonging+N;SG                got: prolong+V;V.PTCP;PRS
-  modularised          expected: modularise+V;V.PTCP;PST        got: modularise+V;PST
-  quadrijugate         expected: quadrijugate+ADJ               got: quadrijugate+V;NFIN;IMP+SBJV
-  leptose              expected: leptose+ADJ                    got: leptose+N;SG
-  abstracted           expected: abstracted+ADJ                 got: abstract+V;PST
-  nonfruit             expected: nonfruit+N;SG                  got: nonfruit+ADJ
-  queefy               expected: queefy+ADJ                     got: queefy+V;NFIN;IMP+SBJV
+  wrench               expected: wrench+V;NFIN;IMP+SBJV         got: wrench+N;SG
+  multiplay            expected: multiplay+N;SG                 got: multiplay+ADJ
+  phytomining          expected: phytomining+N;SG               got: phytomine+V;V.PTCP;PRS
+  eightpenny           expected: eightpenny+ADJ                 got: eightpenny+N;SG
+  ravages              expected: ravage+V;PRS;3;SG              got: ravage+N;PL
+  interbrain           expected: interbrain+N;SG                got: interbrain+ADJ
+  clampers             expected: clamper+V;PRS;3;SG             got: clamper+N;PL
+  hoolivan             expected: hoolivan+N;SG                  got: hoolivan+ADJ
+  sped                 expected: speed+V;PST                    got: spe+V;PST
+  MSRP                 expected: MSRP+N;SG                      got: 7+N;SG
+  busied               expected: busy+V;PST                     got: busied+ADJ
+  decreet-arbitral     expected: decreet-arbitral+N;SG          got: decreet-arbitral+ADJ
+  fireworthy           expected: fireworthy+ADJ                 got: fireworthy+N;SG
+  shenanigan           expected: shenanigan+N;SG                got: shenanigan+ADJ
+  smalled              expected: small+V;PST                    got: smal+V;PST
+  siring               expected: siring+N;SG                    got: sire+V;V.PTCP;PRS
+  sesquifumarates      expected: sesquifumarate+N;PL            got: sesquifumarate+V;PRS;3;SG
+  lining               expected: line+V;V.PTCP;PRS              got: lining+N;SG
+  countable            expected: notice+N;PL                    got: chore+N;PL
+  nonresearch          expected: nonresearch+ADJ                got: nonresearch+N;SG

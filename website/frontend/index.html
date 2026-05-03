@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pullinguistics — Morphological Analyzer</title>
+  <meta name="description" content="Hybrid FST + Neural morphological analysis with interactive state-graph visualization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ Ambient Background ============ -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ============ Main Container ============ -->
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">λ</span>
+        <div>
+          <h1>Pullinguistics</h1>
+          <p class="tagline">Hybrid Morphological Analyzer</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        <span id="statusText">Connecting…</span>
+      </div>
+    </header>
+
+    <!-- Input Card -->
+    <section class="card input-card">
+      <div class="card-header">
+        <h2>Analyze</h2>
+      </div>
+      <div class="input-row">
+        <!-- Language Selector -->
+        <div class="select-wrapper">
+          <select id="langSelect">
+            <option value="eng" selected>🇬🇧  English</option>
+            <option value="hin">🇮🇳  Hindi</option>
+            <option value="ben">🇧🇩  Bengali</option>
+          </select>
+        </div>
+        <!-- Word Input -->
+        <div class="input-wrapper">
+          <input type="text" id="wordInput" placeholder="Type a word…  e.g. walked, running, happiness" autocomplete="off" spellcheck="false" />
+        </div>
+        <!-- Submit -->
+        <button id="analyzeBtn" class="btn-primary" disabled>
+          <span class="btn-text">Analyze</span>
+          <span class="btn-loader" hidden>
+            <span class="spinner"></span>
+          </span>
+        </button>
+      </div>
+      <div id="quickChips" class="quick-chips">
+        <!-- Populated by JS based on selected language -->
+      </div>
+    </section>
+
+    <!-- Results Section (hidden until we have results) -->
+    <section id="resultsSection" class="results-section" hidden>
+
+      <!-- Source Badge -->
+      <div class="source-row">
+        <span id="sourceBadge" class="source-badge"></span>
+        <span id="wordEcho" class="word-echo"></span>
+      </div>
+
+      <!-- Analyses Card -->
+      <div class="card results-card">
+        <div class="card-header">
+          <h2>Analyses</h2>
+          <span id="analysisCount" class="count-pill"></span>
+        </div>
+        <div id="analysisList" class="analysis-list"></div>
+      </div>
+
+      <!-- FST Graph Card (only for FST source) -->
+      <div id="graphCard" class="card graph-card" hidden>
+        <div class="card-header">
+          <h2>FST State Graph</h2>
+          <div class="graph-meta">
+            <span id="graphStates" class="meta-pill"></span>
+            <span id="graphArcs" class="meta-pill"></span>
+          </div>
+        </div>
+        <div class="graph-container">
+          <svg id="fstSvg" class="fst-svg"></svg>
+        </div>
+        <!-- Traversal Path -->
+        <div id="traversalSection" class="traversal-section" hidden>
+          <h3>Traversal Path</h3>
+          <div id="traversalPath" class="traversal-path"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>FST: Pynini Finite-State Transducer &nbsp;·&nbsp; Neural: Character-level Transformer</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
