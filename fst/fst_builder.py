@@ -1,4 +1,4 @@
-"""
+﻿"""
 fst_builder.py - FST Construction
 Builds the morphological generator (lexical -> surface) and
 the analyzer (surface -> lexical) from the lexicon and rules.
@@ -25,7 +25,6 @@ def build_generator():
 
     lexicon_fst = pynini.union(*word_acceptors).optimize()
 
-    # Compose lexicon with rules: lexical -> surface
     generator = (lexicon_fst @ RULES).optimize()
     return generator
 
