@@ -1,0 +1,75 @@
+========================================================================
+HYBRID SYSTEM EVALUATION REPORT
+Pure FST vs Hybrid (FST + Neural Fallback)
+========================================================================
+
+METRICS
+----------------------------------------
+
+  Pure FST:
+    Total:     5000
+    Coverage:  56/5000 (1.1%)
+    Accuracy:  33/5000 (0.7%)
+    Ambiguity: 1.21
+    OOV:       4944
+
+  Hybrid:
+    Total:     5000
+    Coverage:  5000/5000 (100.0%)
+    Accuracy:  3907/5000 (78.1%)
+    Ambiguity: 1.00
+    OOV:       0
+
+IMPROVEMENT
+----------------------------------------
+  Accuracy:  +77.5%
+  Coverage:  +98.9%
+  Additional correct: +3874
+  Neural wins:  3874
+  Neural losses: 1053
+
+NEURAL WINS (sample)
+----------------------------------------
+  gastrohysterotomy    expected: gastrohysterotomy+N;SG         got: gastrohysterotomy+N;SG
+  bibliophagist        expected: bibliophagist+N;SG             got: bibliophagist+N;SG
+  opipramol            expected: opipramol+N;SG                 got: opipramol+N;SG
+  committies           expected: committy+N;PL                  got: committy+N;PL
+  remapper             expected: remapper+N;SG                  got: remapper+N;SG
+  dodecagons           expected: dodecagon+N;PL                 got: dodecagon+N;PL
+  foreshot             expected: foreshot+N;SG                  got: foreshot+N;SG
+  bardos               expected: bardo+N;PL                     got: bardo+N;PL
+  accuser              expected: accuser+N;SG                   got: accuser+N;SG
+  pleaseman            expected: pleaseman+N;SG                 got: pleaseman+N;SG
+  suppressants         expected: suppressant+N;PL               got: suppressant+N;PL
+  municycling          expected: municycling+N;SG               got: municycling+N;SG
+  antireflection       expected: antireflection+ADJ             got: antireflection+ADJ
+  subjoin              expected: subjoin+N;SG                   got: subjoin+N;SG
+  condiments           expected: condiment+N;PL                 got: condiment+N;PL
+  conjugational        expected: conjugational+ADJ              got: conjugational+ADJ
+  nondrowsy            expected: nondrowsy+ADJ                  got: nondrowsy+ADJ
+  anti-haitianism      expected: anti-haitianism+N;SG           got: anti-haitianism+N;SG
+  aplocheilids         expected: aplocheilid+N;PL               got: aplocheilid+N;PL
+  reversion            expected: reversion+N;SG                 got: reversion+N;SG
+
+NEURAL LOSSES (sample)
+----------------------------------------
+  phrensies            expected: phrensy+V;PRS;3;SG             got: phrensy+N;PL
+  damask               expected: damask+ADJ                     got: damask+N;SG
+  mishits              expected: mishit+V;PRS;3;SG              got: mishit+N;PL
+  capotted             expected: capot+V;V.PTCP;PST             got: capot+V;PST
+  colimiting           expected: colimit+V;V.PTCP;PRS           got: colimite+V;V.PTCP;PRS
+  medjidieh            expected: medjidieh+N;SG                 got: medjidy+ADJ;CMPR
+  white-ant            expected: white-ant+V;NFIN;IMP+SBJV      got: white-ant+N;SG
+  papabile             expected: papabile+ADJ                   got: papabile+N;SG
+  cosegregated         expected: cosegregate+V;V.PTCP;PST       got: cosegregate+V;PST
+  underbanked          expected: underbanked+ADJ                got: underbank+V;PST
+  attorneys            expected: attorney+V;PRS;3;SG            got: attorney+N;PL
+  pawawed              expected: pawaw+V;V.PTCP;PST             got: pawaw+V;PST
+  annulled             expected: annul+V;PST                    got: annull+V;PST
+  prolonging           expected: prolonging+N;SG                got: prolong+V;V.PTCP;PRS
+  modularised          expected: modularise+V;V.PTCP;PST        got: modularise+V;PST
+  quadrijugate         expected: quadrijugate+ADJ               got: quadrijugate+V;NFIN;IMP+SBJV
+  leptose              expected: leptose+ADJ                    got: leptose+N;SG
+  abstracted           expected: abstracted+ADJ                 got: abstract+V;PST
+  nonfruit             expected: nonfruit+N;SG                  got: nonfruit+ADJ
+  queefy               expected: queefy+ADJ                     got: queefy+V;NFIN;IMP+SBJV

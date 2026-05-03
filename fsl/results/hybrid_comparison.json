@@ -1,0 +1,735 @@
+{
+  "pure_fst": {
+    "system": "Pure FST",
+    "total": 5000,
+    "covered": 56,
+    "correct": 33,
+    "coverage": 0.0112,
+    "accuracy": 0.0066,
+    "ambiguity": 1.2142857142857142,
+    "num_errors": 23,
+    "num_oov": 4944
+  },
+  "hybrid": {
+    "system": "Hybrid",
+    "total": 5000,
+    "covered": 5000,
+    "correct": 3907,
+    "coverage": 1.0,
+    "accuracy": 0.7814,
+    "ambiguity": 1.0024,
+    "num_errors": 1093,
+    "num_oov": 0
+  },
+  "improvement": {
+    "accuracy_delta": 0.7747999999999999,
+    "coverage_delta": 0.9888,
+    "additional_correct": 3874,
+    "neural_wins": 3874,
+    "neural_losses": 1053
+  },
+  "neural_win_samples": [
+    {
+      "word": "gastrohysterotomy",
+      "expected": "gastrohysterotomy+N;SG",
+      "predicted": [
+        "gastrohysterotomy+N;SG"
+      ]
+    },
+    {
+      "word": "bibliophagist",
+      "expected": "bibliophagist+N;SG",
+      "predicted": [
+        "bibliophagist+N;SG"
+      ]
+    },
+    {
+      "word": "opipramol",
+      "expected": "opipramol+N;SG",
+      "predicted": [
+        "opipramol+N;SG"
+      ]
+    },
+    {
+      "word": "committies",
+      "expected": "committy+N;PL",
+      "predicted": [
+        "committy+N;PL"
+      ]
+    },
+    {
+      "word": "remapper",
+      "expected": "remapper+N;SG",
+      "predicted": [
+        "remapper+N;SG"
+      ]
+    },
+    {
+      "word": "dodecagons",
+      "expected": "dodecagon+N;PL",
+      "predicted": [
+        "dodecagon+N;PL"
+      ]
+    },
+    {
+      "word": "foreshot",
+      "expected": "foreshot+N;SG",
+      "predicted": [
+        "foreshot+N;SG"
+      ]
+    },
+    {
+      "word": "bardos",
+      "expected": "bardo+N;PL",
+      "predicted": [
+        "bardo+N;PL"
+      ]
+    },
+    {
+      "word": "accuser",
+      "expected": "accuser+N;SG",
+      "predicted": [
+        "accuser+N;SG"
+      ]
+    },
+    {
+      "word": "pleaseman",
+      "expected": "pleaseman+N;SG",
+      "predicted": [
+        "pleaseman+N;SG"
+      ]
+    },
+    {
+      "word": "suppressants",
+      "expected": "suppressant+N;PL",
+      "predicted": [
+        "suppressant+N;PL"
+      ]
+    },
+    {
+      "word": "municycling",
+      "expected": "municycling+N;SG",
+      "predicted": [
+        "municycling+N;SG"
+      ]
+    },
+    {
+      "word": "antireflection",
+      "expected": "antireflection+ADJ",
+      "predicted": [
+        "antireflection+ADJ"
+      ]
+    },
+    {
+      "word": "subjoin",
+      "expected": "subjoin+N;SG",
+      "predicted": [
+        "subjoin+N;SG"
+      ]
+    },
+    {
+      "word": "condiments",
+      "expected": "condiment+N;PL",
+      "predicted": [
+        "condiment+N;PL"
+      ]
+    },
+    {
+      "word": "conjugational",
+      "expected": "conjugational+ADJ",
+      "predicted": [
+        "conjugational+ADJ"
+      ]
+    },
+    {
+      "word": "nondrowsy",
+      "expected": "nondrowsy+ADJ",
+      "predicted": [
+        "nondrowsy+ADJ"
+      ]
+    },
+    {
+      "word": "anti-haitianism",
+      "expected": "anti-haitianism+N;SG",
+      "predicted": [
+        "anti-haitianism+N;SG"
+      ]
+    },
+    {
+      "word": "aplocheilids",
+      "expected": "aplocheilid+N;PL",
+      "predicted": [
+        "aplocheilid+N;PL"
+      ]
+    },
+    {
+      "word": "reversion",
+      "expected": "reversion+N;SG",
+      "predicted": [
+        "reversion+N;SG"
+      ]
+    },
+    {
+      "word": "reup",
+      "expected": "reup+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "reup+V;NFIN;IMP+SBJV"
+      ]
+    },
+    {
+      "word": "dummerer",
+      "expected": "dummerer+N;SG",
+      "predicted": [
+        "dummerer+N;SG"
+      ]
+    },
+    {
+      "word": "prattie",
+      "expected": "prattie+N;SG",
+      "predicted": [
+        "prattie+N;SG"
+      ]
+    },
+    {
+      "word": "ultrafundamentalists",
+      "expected": "ultrafundamentalist+N;PL",
+      "predicted": [
+        "ultrafundamentalist+N;PL"
+      ]
+    },
+    {
+      "word": "popstresses",
+      "expected": "popstress+N;PL",
+      "predicted": [
+        "popstress+N;PL"
+      ]
+    },
+    {
+      "word": "locon",
+      "expected": "locon+N;SG",
+      "predicted": [
+        "locon+N;SG"
+      ]
+    },
+    {
+      "word": "hydrophilia",
+      "expected": "hydrophilia+N;SG",
+      "predicted": [
+        "hydrophilia+N;SG"
+      ]
+    },
+    {
+      "word": "gomisin",
+      "expected": "gomisin+N;SG",
+      "predicted": [
+        "gomisin+N;SG"
+      ]
+    },
+    {
+      "word": "nonprotectionist",
+      "expected": "nonprotectionist+N;SG",
+      "predicted": [
+        "nonprotectionist+N;SG"
+      ]
+    },
+    {
+      "word": "fbo",
+      "expected": "fbo+N;SG",
+      "predicted": [
+        "fbo+N;SG"
+      ]
+    },
+    {
+      "word": "recannulations",
+      "expected": "recannulation+N;PL",
+      "predicted": [
+        "recannulation+N;PL"
+      ]
+    },
+    {
+      "word": "pokerclacks",
+      "expected": "pokerclack+N;PL",
+      "predicted": [
+        "pokerclack+N;PL"
+      ]
+    },
+    {
+      "word": "lobbed",
+      "expected": "lob+V;PST",
+      "predicted": [
+        "lob+V;PST"
+      ]
+    },
+    {
+      "word": "euharmonic",
+      "expected": "euharmonic+ADJ",
+      "predicted": [
+        "euharmonic+ADJ"
+      ]
+    },
+    {
+      "word": "exaton",
+      "expected": "exaton+N;SG",
+      "predicted": [
+        "exaton+N;SG"
+      ]
+    },
+    {
+      "word": "acranial",
+      "expected": "acranial+ADJ",
+      "predicted": [
+        "acranial+ADJ"
+      ]
+    },
+    {
+      "word": "mockingbirds",
+      "expected": "mockingbird+N;PL",
+      "predicted": [
+        "mockingbird+N;PL"
+      ]
+    },
+    {
+      "word": "terfluorene",
+      "expected": "terfluorene+N;SG",
+      "predicted": [
+        "terfluorene+N;SG"
+      ]
+    },
+    {
+      "word": "totitives",
+      "expected": "totitive+N;PL",
+      "predicted": [
+        "totitive+N;PL"
+      ]
+    },
+    {
+      "word": "vengeful",
+      "expected": "vengeful+ADJ",
+      "predicted": [
+        "vengeful+ADJ"
+      ]
+    },
+    {
+      "word": "scouthouses",
+      "expected": "scouthouse+N;PL",
+      "predicted": [
+        "scouthouse+N;PL"
+      ]
+    },
+    {
+      "word": "sweltery",
+      "expected": "sweltery+ADJ",
+      "predicted": [
+        "sweltery+ADJ"
+      ]
+    },
+    {
+      "word": "lacebark",
+      "expected": "lacebark+N;SG",
+      "predicted": [
+        "lacebark+N;SG"
+      ]
+    },
+    {
+      "word": "bancke",
+      "expected": "bancke+N;SG",
+      "predicted": [
+        "bancke+N;SG"
+      ]
+    },
+    {
+      "word": "contraparallelogram",
+      "expected": "contraparallelogram+N;SG",
+      "predicted": [
+        "contraparallelogram+N;SG"
+      ]
+    },
+    {
+      "word": "cauldrons",
+      "expected": "cauldron+N;PL",
+      "predicted": [
+        "cauldron+N;PL"
+      ]
+    },
+    {
+      "word": "e-shopper",
+      "expected": "e-shopper+N;SG",
+      "predicted": [
+        "e-shopper+N;SG"
+      ]
+    },
+    {
+      "word": "supercoaches",
+      "expected": "supercoach+N;PL",
+      "predicted": [
+        "supercoach+N;PL"
+      ]
+    },
+    {
+      "word": "kilosample",
+      "expected": "kilosample+N;SG",
+      "predicted": [
+        "kilosample+N;SG"
+      ]
+    },
+    {
+      "word": "brigues",
+      "expected": "brigue+N;PL",
+      "predicted": [
+        "brigue+N;PL"
+      ]
+    }
+  ],
+  "neural_loss_samples": [
+    {
+      "word": "phrensies",
+      "expected": "phrensy+V;PRS;3;SG",
+      "predicted": [
+        "phrensy+N;PL"
+      ]
+    },
+    {
+      "word": "damask",
+      "expected": "damask+ADJ",
+      "predicted": [
+        "damask+N;SG"
+      ]
+    },
+    {
+      "word": "mishits",
+      "expected": "mishit+V;PRS;3;SG",
+      "predicted": [
+        "mishit+N;PL"
+      ]
+    },
+    {
+      "word": "capotted",
+      "expected": "capot+V;V.PTCP;PST",
+      "predicted": [
+        "capot+V;PST"
+      ]
+    },
+    {
+      "word": "colimiting",
+      "expected": "colimit+V;V.PTCP;PRS",
+      "predicted": [
+        "colimite+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "medjidieh",
+      "expected": "medjidieh+N;SG",
+      "predicted": [
+        "medjidy+ADJ;CMPR"
+      ]
+    },
+    {
+      "word": "white-ant",
+      "expected": "white-ant+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "white-ant+N;SG"
+      ]
+    },
+    {
+      "word": "papabile",
+      "expected": "papabile+ADJ",
+      "predicted": [
+        "papabile+N;SG"
+      ]
+    },
+    {
+      "word": "cosegregated",
+      "expected": "cosegregate+V;V.PTCP;PST",
+      "predicted": [
+        "cosegregate+V;PST"
+      ]
+    },
+    {
+      "word": "underbanked",
+      "expected": "underbanked+ADJ",
+      "predicted": [
+        "underbank+V;PST"
+      ]
+    },
+    {
+      "word": "attorneys",
+      "expected": "attorney+V;PRS;3;SG",
+      "predicted": [
+        "attorney+N;PL"
+      ]
+    },
+    {
+      "word": "pawawed",
+      "expected": "pawaw+V;V.PTCP;PST",
+      "predicted": [
+        "pawaw+V;PST"
+      ]
+    },
+    {
+      "word": "annulled",
+      "expected": "annul+V;PST",
+      "predicted": [
+        "annull+V;PST"
+      ]
+    },
+    {
+      "word": "prolonging",
+      "expected": "prolonging+N;SG",
+      "predicted": [
+        "prolong+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "modularised",
+      "expected": "modularise+V;V.PTCP;PST",
+      "predicted": [
+        "modularise+V;PST"
+      ]
+    },
+    {
+      "word": "quadrijugate",
+      "expected": "quadrijugate+ADJ",
+      "predicted": [
+        "quadrijugate+V;NFIN;IMP+SBJV"
+      ]
+    },
+    {
+      "word": "leptose",
+      "expected": "leptose+ADJ",
+      "predicted": [
+        "leptose+N;SG"
+      ]
+    },
+    {
+      "word": "abstracted",
+      "expected": "abstracted+ADJ",
+      "predicted": [
+        "abstract+V;PST"
+      ]
+    },
+    {
+      "word": "nonfruit",
+      "expected": "nonfruit+N;SG",
+      "predicted": [
+        "nonfruit+ADJ"
+      ]
+    },
+    {
+      "word": "queefy",
+      "expected": "queefy+ADJ",
+      "predicted": [
+        "queefy+V;NFIN;IMP+SBJV"
+      ]
+    },
+    {
+      "word": "capsidated",
+      "expected": "capsidated+ADJ",
+      "predicted": [
+        "capsidate+V;PST"
+      ]
+    },
+    {
+      "word": "transcendentalised",
+      "expected": "transcendentalise+V;V.PTCP;PST",
+      "predicted": [
+        "transcendentalise+V;PST"
+      ]
+    },
+    {
+      "word": "jurimetrics",
+      "expected": "jurimetrics+N;SG",
+      "predicted": [
+        "jurimetric+N;PL"
+      ]
+    },
+    {
+      "word": "aminoshikimate",
+      "expected": "aminoshikimate+N;SG",
+      "predicted": [
+        "aminoshikimate+V;NFIN;IMP+SBJV"
+      ]
+    },
+    {
+      "word": "diddly",
+      "expected": "diddly+N;SG",
+      "predicted": [
+        "diddly+ADJ"
+      ]
+    },
+    {
+      "word": "lemnoid",
+      "expected": "lemnoid+N;SG",
+      "predicted": [
+        "lemnoid+ADJ"
+      ]
+    },
+    {
+      "word": "pancoronavirus",
+      "expected": "pancoronavirus+ADJ",
+      "predicted": [
+        "pancoronavirus+N;SG"
+      ]
+    },
+    {
+      "word": "verged",
+      "expected": "verge+V;V.PTCP;PST",
+      "predicted": [
+        "verge+V;PST"
+      ]
+    },
+    {
+      "word": "undercoating",
+      "expected": "undercoat+V;V.PTCP;PRS",
+      "predicted": [
+        "undercoate+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "sated",
+      "expected": "sate+V;V.PTCP;PST",
+      "predicted": [
+        "sate+V;PST"
+      ]
+    },
+    {
+      "word": "newgroup",
+      "expected": "newgroup+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "newgroup+ADJ"
+      ]
+    },
+    {
+      "word": "voids",
+      "expected": "void+V;PRS;3;SG",
+      "predicted": [
+        "void+N;PL"
+      ]
+    },
+    {
+      "word": "diminished",
+      "expected": "diminished+ADJ",
+      "predicted": [
+        "diminish+V;PST"
+      ]
+    },
+    {
+      "word": "wunner",
+      "expected": "wunner+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "wunner+N;SG"
+      ]
+    },
+    {
+      "word": "suppurates",
+      "expected": "suppurate+V;PRS;3;SG",
+      "predicted": [
+        "suppurate+N;PL"
+      ]
+    },
+    {
+      "word": "jive",
+      "expected": "jive+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "jive+N;SG"
+      ]
+    },
+    {
+      "word": "femmer",
+      "expected": "femmer+ADJ",
+      "predicted": [
+        "femmer+N;SG"
+      ]
+    },
+    {
+      "word": "nelfies",
+      "expected": "nelfie+N;PL",
+      "predicted": [
+        "nelfy+N;PL"
+      ]
+    },
+    {
+      "word": "additionary",
+      "expected": "additionary+ADJ",
+      "predicted": [
+        "additionary+N;SG"
+      ]
+    },
+    {
+      "word": "teathing",
+      "expected": "teathe+V;V.PTCP;PRS",
+      "predicted": [
+        "teath+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "backbite",
+      "expected": "backbite+V;NFIN;IMP+SBJV",
+      "predicted": [
+        "backbite+N;SG"
+      ]
+    },
+    {
+      "word": "postcraniotomy",
+      "expected": "postcraniotomy+ADJ",
+      "predicted": [
+        "postcraniotomy+N;SG"
+      ]
+    },
+    {
+      "word": "whelpling",
+      "expected": "whelpling+N;SG",
+      "predicted": [
+        "whelple+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "rewon",
+      "expected": "rewin+V;PST",
+      "predicted": [
+        "rewon+N;SG"
+      ]
+    },
+    {
+      "word": "palisadoing",
+      "expected": "palisado+V;V.PTCP;PRS",
+      "predicted": [
+        "palisadoing+N;SG"
+      ]
+    },
+    {
+      "word": "remapped",
+      "expected": "remap+V;V.PTCP;PST",
+      "predicted": [
+        "remap+V;PST"
+      ]
+    },
+    {
+      "word": "perfed",
+      "expected": "perf+V;V.PTCP;PST",
+      "predicted": [
+        "perf+V;PST"
+      ]
+    },
+    {
+      "word": "hypergender",
+      "expected": "hypergender+ADJ",
+      "predicted": [
+        "hypergender+N;SG"
+      ]
+    },
+    {
+      "word": "galling",
+      "expected": "galling+ADJ",
+      "predicted": [
+        "gall+V;V.PTCP;PRS"
+      ]
+    },
+    {
+      "word": "overbound",
+      "expected": "overbind+V;PST",
+      "predicted": [
+        "overbound+V;NFIN;IMP+SBJV"
+      ]
+    }
+  ]
+}
