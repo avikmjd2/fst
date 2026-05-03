@@ -79,7 +79,8 @@ class AnalyzeResponse(BaseModel):
     language: str
     source: str                        # "FST", "Neural", or "Dictionary"
     analyses: list[Analysis]
-    fst_graph: FSTGraph | None = None
+    fst_graph_raw: FSTGraph | None = None
+    fst_graph_textbook: FSTGraph | None = None
 
 
 # ── FST graph helpers ─────────────────────────────────────────────
@@ -150,92 +151,57 @@ def _extract_graph(lattice: pynini.Fst) -> FSTGraph:
         traversal=traversal,
     )
 
-def _group_characters_to_morphemes(graph: FSTGraph) -> FSTGraph:
+def _build_textbook_graph(word: str, raw_analysis: str) -> FSTGraph:
     """
-    VISUAL ONLY: Leave the stem characters individually (e.g. c:c, a:a, t:t)
-    but squash the entire feature tag suffix into a single arc (e.g. s:+N;PL).
+    Synthetically builds a perfectly aligned FST diagram.
+    Matches input characters to lemma characters 1-to-1,
+    and then adds a single transition for all morphological tags.
     """
-    traversal = graph.traversal
-    if not traversal:
-        return graph
-
-    delimiters = {'+', '|'}
-    grouped = []
-    
-    i = 0
-    while i < len(traversal):
-        step = traversal[i]
+    parts = raw_analysis.split("+", 1)
+    if len(parts) == 1:
+        parts = raw_analysis.split("|", 1)
+        delimiter = "|" if len(parts) > 1 else ""
+    else:
+        delimiter = "+"
         
-        # If the output character is a delimiter, OR we've already hit one previously
-        # we start squashing everything from here to the end into ONE arc.
-        if step.output_char in delimiters:
-            # We found the start of the tags!
-            group_start = step.state
-            concat_in = ""
-            concat_out = ""
-            
-            # Consume the rest of the traversal
-            while i < len(traversal):
-                s = traversal[i]
-                concat_in += s.input_char if s.input_char != "ε" else ""
-                concat_out += s.output_char if s.output_char != "ε" else ""
-                i += 1
-                
-            grouped.append(TraversalStep(
-                state=group_start,
-                input_char=concat_in or "ε",
-                output_char=concat_out or "ε",
-                next_state=traversal[-1].next_state,
-            ))
-            break
-        else:
-            # Stem character - keep it as is!
-            grouped.append(step)
-            i += 1
-
-    boundary_ids = [g.state for g in grouped] + [grouped[-1].next_state]
-    unique_boundaries = []
-    for bid in boundary_ids:
-        if bid not in unique_boundaries:
-            unique_boundaries.append(bid)
-            
-    old_to_new = {old: new for new, old in enumerate(unique_boundaries)}
-    orig_finals = {s.id for s in graph.states if s.is_final}
-
-    arcs_by_src = {}
-    for g in grouped:
-        src = old_to_new[g.state]
-        dst = old_to_new[g.next_state]
-        arcs_by_src.setdefault(src, []).append(
-            FSTArc(src=src, dst=dst, input_label=g.input_char, output_label=g.output_char)
-        )
-
-    new_states = []
-    for old_id in unique_boundaries:
-        nid = old_to_new[old_id]
-        new_states.append(FSTState(
-            id=nid,
-            is_start=(old_id == graph.start_state),
-            is_final=(old_id in orig_finals),
-            arcs=arcs_by_src.get(nid, []),
-        ))
-
-    new_traversal = [
-        TraversalStep(
-            state=old_to_new[g.state],
-            input_char=g.input_char,
-            output_char=g.output_char,
-            next_state=old_to_new[g.next_state],
-        )
-        for g in grouped
-    ]
-
+    lemma = parts[0]
+    tags = delimiter + parts[1] if len(parts) > 1 else ""
+    
+    states = []
+    traversal = []
+    
+    # 1-to-1 character mapping
+    for i, char in enumerate(word):
+        out_char = lemma[i] if i < len(lemma) else "ε"
+        arcs = [FSTArc(src=i, dst=i+1, input_label=char, output_label=out_char)]
+        states.append(FSTState(id=i, is_start=(i==0), is_final=False, arcs=arcs))
+        traversal.append(TraversalStep(state=i, input_char=char, output_char=out_char, next_state=i+1))
+        
+    curr_node = len(word)
+    
+    # If lemma is longer than input word, output remaining characters
+    if len(lemma) > len(word):
+        rem_lemma = lemma[len(word):]
+        arcs = [FSTArc(src=curr_node, dst=curr_node+1, input_label="ε", output_label=rem_lemma)]
+        states.append(FSTState(id=curr_node, is_start=False, is_final=False, arcs=arcs))
+        traversal.append(TraversalStep(state=curr_node, input_char="ε", output_char=rem_lemma, next_state=curr_node+1))
+        curr_node += 1
+        
+    # Add tags
+    if tags:
+        arcs = [FSTArc(src=curr_node, dst=curr_node+1, input_label="ε", output_label=tags)]
+        states.append(FSTState(id=curr_node, is_start=False, is_final=False, arcs=arcs))
+        traversal.append(TraversalStep(state=curr_node, input_char="ε", output_char=tags, next_state=curr_node+1))
+        curr_node += 1
+        
+    states.append(FSTState(id=curr_node, is_start=(curr_node==0), is_final=True, arcs=[]))
+    
     return FSTGraph(
-        states=new_states,
-        num_states=len(new_states),
-        num_arcs=sum(len(s.arcs) for s in new_states),
+        states=states,
+        num_states=len(states),
+        num_arcs=len(traversal),
         start_state=0,
-        traversal=new_traversal,
+        traversal=traversal,
     )
 
 def _parse(raw: str) -> Analysis:
@@ -263,11 +229,13 @@ def _analyze_english(word: str) -> AnalyzeResponse:
         )
         if lattice.start() != pynini.NO_STATE_ID:
             analyses = sorted(set(lattice.paths(output_token_type="utf8").ostrings()))
-            graph = _group_characters_to_morphemes(_extract_graph(lattice))
+            graph_raw = _extract_graph(lattice)
+            graph_textbook = _build_textbook_graph(word, analyses[0]) if analyses else None
             return AnalyzeResponse(
                 word=word, language="eng", source="FST",
                 analyses=[_parse(a) for a in analyses],
-                fst_graph=graph,
+                fst_graph_raw=graph_raw,
+                fst_graph_textbook=graph_textbook,
             )
     except Exception:
         pass
@@ -276,7 +244,8 @@ def _analyze_english(word: str) -> AnalyzeResponse:
     return AnalyzeResponse(
         word=word, language="eng", source="Neural",
         analyses=[_parse(a) for a in neural_results],
-        fst_graph=None,
+        fst_graph_raw=None,
+        fst_graph_textbook=None,
     )
 
 
@@ -301,7 +270,7 @@ def _analyze_dict_fst(word: str, lang: str) -> AnalyzeResponse:
         # Use utf8 tokens — matching how fst_builder.py builds it
         lattice = pynini.compose(pynini.accep(word, token_type="utf8"), fst)
         if lattice.start() != pynini.NO_STATE_ID:
-            graph = _group_characters_to_morphemes(_extract_graph(lattice))
+            graph_raw = _extract_graph(lattice)
             in_fst = True
     except Exception:
         pass
@@ -315,6 +284,7 @@ def _analyze_dict_fst(word: str, lang: str) -> AnalyzeResponse:
         raw = f"{lemma}+{upos};{feats}" if feats != "_" else f"{lemma}+{upos}"
         analyses = [_parse(raw)]
         source = "FST" if in_fst else "Dictionary"
+        graph_textbook = _build_textbook_graph(word, raw)
     else:
         # Heuristic fallback for OOV
         conllu_line = fallback_fn(1, word)
@@ -325,11 +295,13 @@ def _analyze_dict_fst(word: str, lang: str) -> AnalyzeResponse:
         raw = f"{lemma}+{upos};{feats}" if feats != "_" else f"{lemma}+{upos}"
         analyses = [_parse(raw)]
         source = "Heuristic"
+        graph_textbook = None
 
     return AnalyzeResponse(
         word=word, language=lang, source=source,
         analyses=analyses,
-        fst_graph=graph,
+        fst_graph_raw=graph_raw,
+        fst_graph_textbook=graph_textbook,
     )
 
 

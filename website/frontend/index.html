@@ -7,7 +7,7 @@
   <meta name="description" content="Hybrid FST + Neural morphological analysis with interactive state-graph visualization." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <!-- ============ Ambient Background ============ -->
@@ -87,18 +87,32 @@
       <!-- FST Graph Card (only for FST source) -->
       <div id="graphCard" class="card graph-card" hidden>
         <div class="card-header">
-          <h2>FST State Graph</h2>
+          <h2>FST Visualizations</h2>
           <div class="graph-meta">
             <span id="graphStates" class="meta-pill"></span>
             <span id="graphArcs" class="meta-pill"></span>
           </div>
         </div>
-        <div class="graph-container">
-          <svg id="fstSvg" class="fst-svg"></svg>
+        
+        <div class="graph-section-title">
+          <h3>Textbook Alignment Graph</h3>
+          <p class="graph-subtitle">Perfect character-by-character alignment</p>
         </div>
+        <div class="graph-container">
+          <svg id="fstSvgTextbook" class="fst-svg"></svg>
+        </div>
+
+        <div class="graph-section-title" style="margin-top: 1.5rem;">
+          <h3>Raw OpenFST Graph</h3>
+          <p class="graph-subtitle">Literal execution path with epsilon transitions</p>
+        </div>
+        <div class="graph-container">
+          <svg id="fstSvgRaw" class="fst-svg"></svg>
+        </div>
+
         <!-- Traversal Path -->
         <div id="traversalSection" class="traversal-section" hidden>
-          <h3>Traversal Path</h3>
+          <h3>Traversal Path (Raw)</h3>
           <div id="traversalPath" class="traversal-path"></div>
         </div>
       </div>
@@ -110,6 +124,6 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

@@ -182,12 +182,19 @@ function renderResults(data) {
   });
 
   // FST Graph
-  if (data.fst_graph) {
+  if (data.fst_graph_raw || data.fst_graph_textbook) {
     graphCard.hidden = false;
-    graphStates.textContent = `${data.fst_graph.num_states} states`;
-    graphArcs.textContent = `${data.fst_graph.num_arcs} arcs`;
-    drawFSTGraph(data.fst_graph);
-    renderTraversal(data.fst_graph.traversal);
+    graphStates.textContent = `${data.fst_graph_raw ? data.fst_graph_raw.num_states : 0} states`;
+    graphArcs.textContent = `${data.fst_graph_raw ? data.fst_graph_raw.num_arcs : 0} arcs`;
+    
+    if (data.fst_graph_textbook) {
+        drawFSTGraph(data.fst_graph_textbook, document.getElementById("fstSvgTextbook"));
+    }
+    
+    if (data.fst_graph_raw) {
+        drawFSTGraph(data.fst_graph_raw, document.getElementById("fstSvgRaw"));
+        renderTraversal(data.fst_graph_raw.traversal);
+    }
   } else {
     graphCard.hidden = true;
   }
@@ -196,7 +203,7 @@ function renderResults(data) {
 }
 
 // ── Draw FST graph as SVG ────────────────────────────────────────
-function drawFSTGraph(graph) {
+function drawFSTGraph(graph, fstSvg) {
   const { states, traversal } = graph;
   if (!states.length) return;
 

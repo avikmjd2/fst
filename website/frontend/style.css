@@ -356,6 +356,19 @@ body {
   color: var(--text-dim);
 }
 
+.graph-section-title {
+  margin-bottom: 0.5rem;
+}
+.graph-section-title h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+.graph-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+}
 .graph-container {
   width: 100%;
   overflow-x: auto;
