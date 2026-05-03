@@ -18,7 +18,8 @@ def build_irregulars_fst():
     """Build FST for all irregular forms as direct (analysis, surface) mappings."""
     if not ALL_IRREGULARS:
         return None
-    fst = pynini.string_map(ALL_IRREGULARS).optimize()
+    # fst = pynini.string_map(ALL_IRREGULARS).optimize()
+    fst = pynini.string_map(ALL_IRREGULARS)
     print(f"  [irregulars] {len(ALL_IRREGULARS)} irregular mappings loaded")
     return fst
 
@@ -49,7 +50,8 @@ def build_fst():
 
     # Step 3: Compose morphotactics with spelling rules
     print("[3/4] Composing morphotactics @ spelling rules...")
-    regular_generator = (morphotactics @ spelling_rules).optimize()
+    # regular_generator = (morphotactics @ spelling_rules).optimize()
+    regular_generator = (morphotactics @ spelling_rules)
     print("  Composition complete")
     print()
 
@@ -58,13 +60,15 @@ def build_fst():
     irregulars_fst = build_irregulars_fst()
 
     if irregulars_fst is not None:
-        generator = pynini.union(regular_generator, irregulars_fst).optimize()
+        generator = pynini.union(regular_generator, irregulars_fst)
+        # generator = pynini.union(regular_generator, irregulars_fst).optimize()
     else:
         generator = regular_generator
     print()
 
     # Build analyzer by inverting the generator
-    analyzer = pynini.invert(generator).optimize()
+    analyzer = pynini.invert(generator)
+    # analyzer = pynini.invert(generator).optimize()
 
     # Print stats
     print("=" * 50)
