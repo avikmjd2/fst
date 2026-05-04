@@ -1,5 +1,4 @@
-Initializing Hindi FSL...
-Reading /mnt/c/Users/Rushil/OneDrive/Desktop/ASSignments/sem 2/CL-1/PROJECT/fst/hindi_fsl/test.txt...
+
 word: इसके
   my output: यह PRON PRP Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
   expected:  यह PRON PRP Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
