@@ -1,0 +1,1606 @@
+word: কিছু
+  my output: কিছু PRON _ PronType=Ind
+  expected:  কিছু PRON _ PronType=Ind
+  result: match
+
+word: করি
+  my output: করা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  করা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: খেয়েছ
+  my output: খেয়া VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  খাওয়া VERB _ Aspect=Perf|Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: মা
+  my output: মা NOUN _ Case=Nom|Number=Sing
+  expected:  মা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: খাবার
+  my output: খাবার NOUN _ Case=Nom|Number=Sing
+  expected:  খাবার NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: দয়ে
+  my output: দয়ে NOUN _ Case=Nom|Number=Sing
+  expected:  দেত্তয়া VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: নাই
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: মা
+  my output: মা NOUN _ Case=Nom|Number=Sing
+  expected:  মা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: খারাপ
+  my output: খারাপ ADJ _ Degree=Pos
+  expected:  খারাপ ADJ _ Degree=Pos
+  result: match
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: তাই
+  my output: তাই NOUN _ Case=Nom|Number=Sing
+  expected:  তাই DET _ PronType=Dem
+  result: wrong output
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না INTJ _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমার
+  my output: আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: মা
+  my output: মা NOUN _ Case=Nom|Number=Sing
+  expected:  মা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ভাল
+  my output: ভাল ADJ _ Degree=Pos
+  expected:  ভাল ADJ _ Degree=Pos
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: বাবার
+  my output: বাবা NOUN _ Case=Gen|Number=Sing
+  expected:  বাবা NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: নাম
+  my output: নাম NOUN _ Case=Nom|Number=Sing
+  expected:  নাম NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আমার
+  my output: আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: বাবার
+  my output: বাবা NOUN _ Case=Gen|Number=Sing
+  expected:  বাবা NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: নাম
+  my output: নাম NOUN _ Case=Nom|Number=Sing
+  expected:  নাম NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ফারুক
+  my output: ফারুক NOUN _ Case=Nom|Number=Sing
+  expected:  ফারুক NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: গান
+  my output: গান NOUN _ Case=Nom|Number=Sing
+  expected:  গান NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: গাইতে
+  my output: গাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  গাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: পারো
+  my output: পারা AUX _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  expected:  পারা AUX _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: হ্যাঁ
+  my output: হ্যাঁ INTJ _ _
+  expected:  হ্যাঁ INTJ _ _
+  result: match
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: গান
+  my output: গান NOUN _ Case=Nom|Number=Sing
+  expected:  গান NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: গাইতে
+  my output: গাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  গাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: পারি
+  my output: পারা AUX _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  পারা AUX _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: কোন
+  my output: কোন DET _ PronType=Int
+  expected:  কোন DET _ PronType=Int
+  result: match
+
+word: ক্লাসে
+  my output: ক্লাস NOUN _ Case=Loc|Number=Sing
+  expected:  ক্লাস NOUN _ Case=Loc|Number=Sing
+  result: match
+
+word: পড়
+  my output: পড় NOUN _ Case=Nom|Number=Sing
+  expected:  পড় VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আমার
+  my output: আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: সোনার
+  my output: সোনা ADJ _ Degree=Pos
+  expected:  সোনা ADJ _ Degree=Pos
+  result: match
+
+word: বাংলা
+  my output: বাংলা NOUN _ Case=Nom|Number=Sing
+  expected:  বাংলা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: তোমায়
+  my output: তোমায় NOUN _ Case=Nom|Number=Sing
+  expected:  তুমি PRON _ Case=Acc|Number=Sing|Person=2|PronType=Prs
+  result: wrong output
+
+word: ভালবাসি
+  my output: ভালবাসা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  ভালবাসা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: প্রথম
+  my output: প্রথম ADJ _ NumType=Ord
+  expected:  প্রথম ADJ _ NumType=Ord
+  result: match
+
+word: শ্রেনীতে
+  my output: শ্রেনীা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  শ্রেনী NOUN _ Case=Loc|Number=Sing
+  result: wrong output
+
+word: পড়ি
+  my output: পড়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  পড়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: একটা
+  my output: একটা DET _ Definite=Ind|PronType=Art
+  expected:  একটি DET _ Definite=Ind|PronType=Art
+  result: wrong output
+
+word: গান
+  my output: গান NOUN _ Case=Nom|Number=Sing
+  expected:  গান NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: গাও
+  my output: গাও NOUN _ Case=Nom|Number=Sing
+  expected:  গাও VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তোমাকে
+  my output: তুমি PRON _ Case=Acc|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Acc|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: কে
+  my output: কে PRON _ PronType=Int
+  expected:  কে PRON _ PronType=Int
+  result: match
+
+word: রেখে
+  my output: রাখা VERB _ Aspect=Perf|VerbForm=Part
+  expected:  রাখা VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: আসে
+  my output: আসা VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  expected:  আসা VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: মা
+  my output: মা NOUN _ Case=Nom|Number=Sing
+  expected:  মা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: রেখে
+  my output: রাখা VERB _ Aspect=Perf|VerbForm=Part
+  expected:  রাখা VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: আসে
+  my output: আসা VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  expected:  আসা VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: মাঝে
+  my output: মাঝ ADV _ PronType=Ind
+  expected:  মাঝ ADV _ PronType=Ind
+  result: match
+
+word: মাঝে
+  my output: মাঝ ADV _ PronType=Ind
+  expected:  মাঝ ADV _ PronType=Ind
+  result: match
+
+word: বাবা
+  my output: বাবা NOUN _ Case=Nom|Number=Sing
+  expected:  বাবা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: বন্ধু
+  my output: বন্ধু NOUN _ Case=Nom|Number=Sing
+  expected:  বন্ধু NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কতজন
+  my output: কতজন NOUN _ Case=Nom|Number=Sing
+  expected:  কত ADJ _ Degree=Pos
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: চার
+  my output: চার NUM _ NumType=Card
+  expected:  চার NUM _ NumType=Card
+  result: match
+
+word: জন
+  my output: জন NOUN _ Case=Nom|Number=Plur
+  expected:  জন NOUN _ Case=Nom|Number=Plur
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তাদের
+  my output: সে PRON _ Case=Gen|Number=Plur|Person=3|PronType=Prs
+  expected:  সে PRON _ Case=Gen|Number=Plur|Person=3|PronType=Prs
+  result: match
+
+word: নাম
+  my output: নাম NOUN _ Case=Nom|Number=Sing
+  expected:  নাম NOUN _ Case=Nom|Number=Plur
+  result: wrong output
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: রাকিব
+  my output: রাকিা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  রাকিব PROPN _ Case=Nom|Number=Sing
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: সাকিব
+  my output: সাকিা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  সাকিব PROPN _ Case=Nom|Number=Sing
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: বর্ণালী
+  my output: বর্ণালী PROPN _ Case=Nom|Number=Sing
+  expected:  বর্ণালী PROPN _ Case=Nom|Number=Sing
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: বান্ধবী
+  my output: বান্ধবী NOUN _ Case=Nom|Number=Sing
+  expected:  বান্ধবী NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: নাই
+  my output: না PART _ PartType=Neg
+  expected:  না DET _ PronType=Int
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: একজন
+  my output: একজন NUM _ NumType=Card
+  expected:  একজন NUM _ NumType=Card
+  result: match
+
+word: আছে
+  my output: আছে NOUN _ Case=Nom|Number=Sing
+  expected:  আছে VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তার
+  my output: সে PRON _ Case=Gen|Number=Sing|Person=3|PronType=Prs
+  expected:  সে PRON _ Case=Gen|Number=Sing|Person=3|PronType=Prs
+  result: match
+
+word: নাম
+  my output: নাম NOUN _ Case=Nom|Number=Sing
+  expected:  নাম NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: তার
+  my output: সে PRON _ Case=Gen|Number=Sing|Person=3|PronType=Prs
+  expected:  সে PRON _ Case=Gen|Number=Sing|Person=3|PronType=Prs
+  result: match
+
+word: নাম
+  my output: নাম NOUN _ Case=Nom|Number=Sing
+  expected:  নাম NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: বর্ণালী
+  my output: বর্ণালী PROPN _ Case=Nom|Number=Sing
+  expected:  বর্ণালী PROPN _ Case=Nom|Number=Sing
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: হুম
+  my output: হুম NOUN _ Case=Nom|Number=Sing
+  expected:  হঁমা INTJ _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: খুব
+  my output: খুা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  খুব ADJ _ Degree=Pos
+  result: wrong output
+
+word: ভালো
+  my output: ভালো ADJ _ Degree=Pos
+  expected:  ভালো ADJ _ Degree=Pos
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: চল
+  my output: চল NOUN _ Case=Nom|Number=Sing
+  expected:  চল VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: বাবা
+  my output: বাবা NOUN _ Case=Nom|Number=Sing
+  expected:  বাবা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: খেতে
+  my output: খাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  খাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: যাই
+  my output: যাওয়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  যাওয়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: চল
+  my output: চল NOUN _ Case=Nom|Number=Sing
+  expected:  চল VERB _ Mood=Imp|Person=1|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: খেতে
+  my output: খাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  খাওয়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: যাই
+  my output: যাওয়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  যাওয়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: ক্ষুধার্ত
+  my output: ক্ষুধার্ত NOUN _ Case=Nom|Number=Sing
+  expected:  ক্ষুধা ADJ _ Degree=Pos
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: বাবা
+  my output: বাবা NOUN _ Case=Nom|Number=Sing
+  expected:  বাবা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: আগে
+  my output: আগে ADV _ _
+  expected:  আগে ADV _ _
+  result: match
+
+word: হাত
+  my output: হাত NOUN _ Case=Nom|Number=Plur
+  expected:  হাত NOUN _ Case=Nom|Number=Plur
+  result: match
+
+word: ধুয়ে
+  my output: ধোয়া VERB _ Aspect=Perf|VerbForm=Part
+  expected:  ধোয়া VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: নাও
+  my output: নাও NOUN _ Case=Nom|Number=Sing
+  expected:  নেয়া VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না INTJ _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: ধোবো
+  my output: ধোয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  expected:  ধোয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: হাত
+  my output: হাত NOUN _ Case=Nom|Number=Plur
+  expected:  হাত NOUN _ Case=Nom|Number=Plur
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ধুয়ে
+  my output: ধোয়া VERB _ Aspect=Perf|VerbForm=Part
+  expected:  ধোয়া VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: খেলে
+  my output: খেলে NOUN _ Case=Nom|Number=Sing
+  expected:  খাওয়া VERB _ Mood=Cnd|VerbForm=Part
+  result: wrong output
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: হয়
+  my output: হওয়া VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  expected:  হওয়া VERB _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: জানো
+  my output: জানা VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  expected:  জানা VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: অসুখ
+  my output: অসুখ NOUN _ Case=Nom|Number=Sing
+  expected:  অসুখ NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: করবে
+  my output: করা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  করা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তাহলে
+  my output: তাহলে ADV _ _
+  expected:  তাহলে ADV _ _
+  result: match
+
+word: হাত
+  my output: হাত NOUN _ Case=Nom|Number=Plur
+  expected:  হাত NOUN _ Case=Nom|Number=Plur
+  result: match
+
+word: ধোবো
+  my output: ধোয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  expected:  ধোয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: কার্টুন
+  my output: কার্টুন NOUN _ Case=Nom|Number=Sing
+  expected:  কার্টুন NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: দেখি
+  my output: দেখা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  দেখা VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: খেয়েছ
+  my output: খেয়া VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  খাওয়া VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না INTJ _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: খাব
+  my output: খাা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  খাওয়া VERB _ Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: যদি
+  my output: যদি SCONJ _ _
+  expected:  যদি SCONJ _ _
+  result: match
+
+word: খাও
+  my output: খাও NOUN _ Case=Nom|Number=Sing
+  expected:  খাওয়া VERB _ Mood=Ind|Person=2|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: তাহলে
+  my output: তাহলে ADV _ _
+  expected:  তাহলে ADV _ _
+  result: match
+
+word: একটা
+  my output: একটা DET _ Definite=Ind|PronType=Art
+  expected:  একটা DET _ Definite=Ind|PronType=Art
+  result: match
+
+word: মজার
+  my output: মজা NOUN _ Case=Gen|Number=Sing
+  expected:  মজা ADJ _ Degree=Pos
+  result: wrong output
+
+word: গল্প
+  my output: গল্প NOUN _ Case=Nom|Number=Sing
+  expected:  গল্প NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: বলব
+  my output: বলা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  বলা VERB _ Mood=Cnd|Person=2|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: মজার
+  my output: মজা NOUN _ Case=Gen|Number=Sing
+  expected:  মজা NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: গল্পটি
+  my output: গল্পটি NOUN _ Case=Nom|Number=Sing
+  expected:  গল্প NOUN _ Case=Nom|Number=Sing
+  result: wrong output
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি DET _ PronType=Int
+  result: match
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আগে
+  my output: আগে ADV _ _
+  expected:  আগে ADV _ _
+  result: match
+
+word: খেয়ে
+  my output: খাওয়া VERB _ Aspect=Perf|VerbForm=Part
+  expected:  খাওয়া VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: নাও
+  my output: নাও NOUN _ Case=Nom|Number=Sing
+  expected:  নেয়া VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: তারপর
+  my output: তারপ NOUN _ Case=Gen|Number=Sing
+  expected:  তারপর SCONJ _ _
+  result: wrong output
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: গল্প
+  my output: গল্প NOUN _ Case=Nom|Number=Sing
+  expected:  গল্প NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: বলব
+  my output: বলা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  বলা VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: বাবা
+  my output: বাবা NOUN _ Case=Nom|Number=Sing
+  expected:  বাবা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: আমরা
+  my output: আমি PRON _ Case=Nom|Number=Plur|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Plur|Person=1|PronType=Prs
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PART _ PartType=Int
+  result: wrong output
+
+word: রিক্সায়
+  my output: রিক্সায় NOUN _ Case=Nom|Number=Sing
+  expected:  রিক্সা NOUN _ Case=Loc|Number=Sing
+  result: wrong output
+
+word: ঘুরতে
+  my output: ঘুরা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  ঘোরা VERB _ Aspect=Imp|VerbForm=Part
+  result: wrong output
+
+word: যাব
+  my output: যাা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  যাওয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: এখন
+  my output: এখন ADV _ _
+  expected:  এখন ADV _ _
+  result: match
+
+word: রোদ
+  my output: রোদ NOUN _ Case=Nom|Number=Sing
+  expected:  রোদ NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: নেই
+  my output: নেই NOUN _ Case=Nom|Number=Sing
+  expected:  নেই DET _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT _ _
+  result: wrong output
+
+word: তাই
+  my output: তাই NOUN _ Case=Nom|Number=Sing
+  expected:  তাই ADV _ _
+  result: wrong output
+
+word: চশমা
+  my output: চশমা NOUN _ Case=Nom|Number=Sing
+  expected:  চশমা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: পরতে
+  my output: পরা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  পরা VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: হবে
+  my output: হা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  হওয়া AUX _ Mood=Ind|Person=2|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: না
+  my output: না PART _ PartType=Neg
+  expected:  না PART _ PartType=Neg
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: যে
+  my output: যে PRON _ PronType=Rel
+  expected:  যে PRON _ PronType=Rel
+  result: match
+
+word: ভিক্ষা
+  my output: ভিক্ষা NOUN _ Case=Nom|Number=Sing
+  expected:  ভিক্ষা VERB _ VerbForm=Inf
+  result: wrong output
+
+word: চায়
+  my output: চায় NOUN _ Case=Nom|Number=Sing
+  expected:  চাওয়া AUX _ Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT _ _
+  result: wrong output
+
+word: তাকে
+  my output: তা NOUN _ Case=Acc|Number=Sing
+  expected:  সে PRON _ Case=Acc|Number=Sing|Person=3|PronType=Prs
+  result: wrong output
+
+word: দান
+  my output: দান NOUN _ Case=Nom|Number=Sing
+  expected:  দান NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কর
+  my output: কর NOUN _ Case=Nom|Number=Sing
+  expected:  করা VERB _ Mood=Imp|Person=3|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমাদের
+  my output: আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  result: match
+
+word: দেশের
+  my output: দেশ NOUN _ Case=Gen|Number=Sing
+  expected:  দেশ NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: পতাকার
+  my output: পতাকা NOUN _ Case=Gen|Number=Sing
+  expected:  পতাকা NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: রং
+  my output: রং NOUN _ Case=Nom|Number=Sing
+  expected:  রং NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: সবুজ
+  my output: সবুজ NOUN _ Case=Nom|Number=Sing
+  expected:  সবুজ ADJ _ Degree=Pos
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: জানো
+  my output: জানা VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  expected:  জানা VERB _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PART _ PartType=Int
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আজ
+  my output: আজ NOUN _ Case=Nom|Number=Sing
+  expected:  আজ NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: ক্লাসে
+  my output: ক্লাস NOUN _ Case=Loc|Number=Sing
+  expected:  ক্লাস NOUN _ Case=Loc|Number=Sing
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PRON _ PronType=Int
+  result: wrong output
+
+word: শিখিয়েছে
+  my output: শিখিয়া VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  শেখা VERB _ Mood=Ind|Tense=Past|VerbForm=Part|Voice=Pass
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: প্রিয়
+  my output: প্রিয় NOUN _ Case=Nom|Number=Sing
+  expected:  প্রিয় ADJ _ Degree=Pos
+  result: wrong output
+
+word: রং
+  my output: রং NOUN _ Case=Nom|Number=Sing
+  expected:  রং NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PRON _ PronType=Int
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: দেখ
+  my output: দেখ NOUN _ Case=Nom|Number=Sing
+  expected:  দেখা VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT _ _
+  result: wrong output
+
+word: তোমার
+  my output: তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Gen|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: জন্য
+  my output: জন্য ADP _ _
+  expected:  জন্য ADP _ _
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PRON _ PronType=Int
+  result: wrong output
+
+word: এনেছি
+  my output: এনা VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  আনা VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: আমাদের
+  my output: আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  result: match
+
+word: দেশের
+  my output: দেশ NOUN _ Case=Gen|Number=Sing
+  expected:  দেশ NOUN _ Case=Gen|Number=Sing
+  result: match
+
+word: পতাকা
+  my output: পতাকা NOUN _ Case=Nom|Number=Sing
+  expected:  পতাকা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: আঁকতে
+  my output: আঁকা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  আঁকা VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: পার
+  my output: পা NOUN _ Case=Gen|Number=Sing
+  expected:  পারা AUX _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: তুমি
+  my output: তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Nom|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: আমাদের
+  my output: আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Plur|Person=1|PronType=Prs
+  result: match
+
+word: জাতীয়
+  my output: জাতীয় NOUN _ Case=Nom|Number=Sing
+  expected:  জাতীয় ADJ _ Degree=Pos
+  result: wrong output
+
+word: পতাকা
+  my output: পতাকা NOUN _ Case=Nom|Number=Sing
+  expected:  পতাকা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: আঁকতে
+  my output: আঁকা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  আঁকা VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: পার
+  my output: পা NOUN _ Case=Gen|Number=Sing
+  expected:  পারা AUX _ Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আজ
+  my output: আজ NOUN _ Case=Nom|Number=Sing
+  expected:  আজ ADV _ _
+  result: wrong output
+
+word: সারাদিন
+  my output: সারাদিন NOUN _ Case=Nom|Number=Sing
+  expected:  সারাদিন NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PRON _ PronType=Int
+  result: wrong output
+
+word: কি
+  my output: কি DET _ PronType=Int
+  expected:  কি PRON _ PronType=Int
+  result: wrong output
+
+word: করেছ
+  my output: করা VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  করা VERB _ Aspect=Perf|Mood=Ind|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+word: আজ
+  my output: আজ NOUN _ Case=Nom|Number=Sing
+  expected:  আজ ADV _ _
+  result: wrong output
+
+word: বই
+  my output: বই NOUN _ Case=Nom|Number=Sing
+  expected:  বই NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: পড়েছি
+  my output: পড়া VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  পড়া VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT _ _
+  result: wrong output
+
+word: আর্ট
+  my output: আর্ট NOUN _ Case=Nom|Number=Sing
+  expected:  আর্ট NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: করেছি
+  my output: করা VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  করা VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT _ _
+  result: wrong output
+
+word: গান
+  my output: গান NOUN _ Case=Nom|Number=Sing
+  expected:  গান NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: শিখেছি
+  my output: শিখা VERB _ Aspect=Perf|VerbForm=Fin
+  expected:  শেখা VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: আজ
+  my output: আজ NOUN _ Case=Nom|Number=Sing
+  expected:  আজ ADV _ _
+  result: wrong output
+
+word: স্কুলে
+  my output: স্কুলে NOUN _ Case=Nom|Number=Sing
+  expected:  স্কুল NOUN _ Case=Loc|Number=Sing
+  result: wrong output
+
+word: হাতি
+  my output: হাতি NOUN _ Case=Nom|Number=Sing
+  expected:  হাতি NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: দেখেছি
+  my output: দেখা VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  expected:  দেখা VERB _ Aspect=Perf|Mood=Ind|Person=1|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আচ্ছা
+  my output: আচ্ছা NOUN _ Case=Nom|Number=Sing
+  expected:  আচ্ছা INTJ _ _
+  result: wrong output
+
+word: ,
+  my output: , PUNCT , _
+  expected:  , PUNCT , _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: তোমাকে
+  my output: তুমি PRON _ Case=Acc|Number=Sing|Person=2|PronType=Prs
+  expected:  তুমি PRON _ Case=Acc|Number=Sing|Person=2|PronType=Prs
+  result: match
+
+word: একটা
+  my output: একটা DET _ Definite=Ind|PronType=Art
+  expected:  একটা DET _ Definite=Ind|PronType=Art
+  result: match
+
+word: সুন্দর
+  my output: সুন্দর ADJ _ Degree=Pos
+  expected:  সুন্দর ADJ _ Degree=Pos
+  result: match
+
+word: জামা
+  my output: জামা NOUN _ Case=Nom|Number=Sing
+  expected:  জামা NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: কিনে
+  my output: কিনে NOUN _ Case=Nom|Number=Sing
+  expected:  কেনা VERB _ Aspect=Perf|VerbForm=Part
+  result: wrong output
+
+word: দিব
+  my output: দিা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  দেত্তয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: এখন
+  my output: এখন ADV _ _
+  expected:  এখন ADV _ _
+  result: match
+
+word: পড়তে
+  my output: পড়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  পড়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: বসার
+  my output: বসা NOUN _ Case=Gen|Number=Sing
+  expected:  বসা VERB _ VerbForm=Inf
+  result: wrong output
+
+word: সময়
+  my output: সময় NOUN _ Case=Nom|Number=Sing
+  expected:  সময় NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: হয়েছে
+  my output: হওয়া VERB _ Aspect=Perf|Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  expected:  হওয়া VERB _ Aspect=Perf|Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: বই
+  my output: বই NOUN _ Case=Nom|Number=Sing
+  expected:  বই NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: নিয়ে
+  my output: নিয়ে NOUN _ Case=Nom|Number=Sing
+  expected:  নিয়ে ADP _ _
+  result: wrong output
+
+word: পড়তে
+  my output: পড়া VERB _ Aspect=Imp|VerbForm=Part
+  expected:  পড়া VERB _ Aspect=Imp|VerbForm=Part
+  result: match
+
+word: বস
+  my output: বস NOUN _ Case=Nom|Number=Sing
+  expected:  বসা VERB _ Mood=Imp|Person=2|Tense=Pres|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমার
+  my output: আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Gen|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: পড়া
+  my output: পড়া NOUN _ Case=Nom|Number=Sing
+  expected:  পড়া NOUN _ Case=Nom|Number=Sing|VerbForm=Vnoun
+  result: wrong output
+
+word: শেষ
+  my output: শেষ NOUN _ Case=Nom|Number=Sing
+  expected:  শেষ NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: হয়েছে
+  my output: হওয়া VERB _ Aspect=Perf|Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  expected:  হওয়া VERB _ Aspect=Perf|Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
+  result: match
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমি
+  my output: আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Sing|Person=1|PronType=Prs
+  result: match
+
+word: লেখা
+  my output: লেখা NOUN _ Case=Nom|Number=Sing
+  expected:  লেখা NOUN _ Case=Nom|Number=Sing|VerbForm=Vnoun
+  result: wrong output
+
+word: শেষ
+  my output: শেষ NOUN _ Case=Nom|Number=Sing
+  expected:  শেষ NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: করে
+  my output: করা VERB _ Aspect=Perf|VerbForm=Part
+  expected:  করা VERB _ Aspect=Perf|VerbForm=Part
+  result: match
+
+word: কার্টুন
+  my output: কার্টুন NOUN _ Case=Nom|Number=Sing
+  expected:  কার্টুন NOUN _ Case=Nom|Number=Sing
+  result: match
+
+word: দেখব
+  my output: দেখা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  দেখা VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ।
+  my output: । PUNCT । _
+  expected:  । PUNCT । _
+  result: match
+
+word: আমরা
+  my output: আমি PRON _ Case=Nom|Number=Plur|Person=1|PronType=Prs
+  expected:  আমি PRON _ Case=Nom|Number=Plur|Person=1|PronType=Prs
+  result: match
+
+word: কখন
+  my output: কখন NOUN _ Case=Nom|Number=Sing
+  expected:  কখন ADV _ PronType=Int
+  result: wrong output
+
+word: ঘুরতে
+  my output: ঘুরা VERB _ Aspect=Imp|VerbForm=Part
+  expected:  ঘোরা VERB _ Aspect=Imp|VerbForm=Part
+  result: wrong output
+
+word: যাব
+  my output: যাা VERB _ Mood=Ind|Tense=Fut|VerbForm=Fin
+  expected:  যাওয়া VERB _ Mood=Ind|Person=1|Tense=Fut|VerbForm=Fin
+  result: wrong output
+
+word: ?
+  my output: ? PUNCT ? _
+  expected:  ? PUNCT ? _
+  result: match
+
+========================================
+EVALUATION RESULTS
+========================================
+Total words evaluated: 320
+Exact morphological matches: 238 / 320 (74.38%)
+========================================
